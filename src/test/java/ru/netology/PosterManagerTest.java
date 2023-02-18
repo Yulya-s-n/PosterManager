@@ -3,11 +3,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class PosterManagerTest {
-
     @Test
     public void shouldAddMovies() {
         PosterManager manager = new PosterManager();
-
         manager.addMovie("Movie 1");
         manager.addMovie("Movie 2");
         manager.addMovie("Movie 3");
@@ -70,7 +68,6 @@ public class PosterManagerTest {
         manager.addMovie("Movie 9");
         manager.addMovie("Movie 10");
         manager.addMovie("Movie 11");
-
 
         String[] expected = { "Movie 11", "Movie 10","Movie 9", "Movie 8", "Movie 7" };
         String[] actual = manager.findLast();
